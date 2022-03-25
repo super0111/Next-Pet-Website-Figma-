@@ -1,0 +1,64 @@
+.wrapper {
+    padding: 220px 20px 43px;
+    font-size: 0;
+    @apply text-white text-center md:text-left relative
+}
+
+.content {
+    @apply container mx-auto relative z-10
+}
+
+.description {
+    font-size: 1rem;
+    margin: 0 0 26px;
+    @apply px-1
+}
+
+.heading {
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+    line-height: 1.20;
+    @apply font-bold
+}
+
+.cta {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin: 26px 0 19px;
+    padding: 1rem 5rem;
+    max-width: 288px;
+    @apply text-purple bg-orange w-full rounded font-bold mx-auto md:inline-block
+}
+
+.alt {
+    font-size: 0.875rem;
+    @apply text-orange border-solid border-b-2 border-orange md:inline-block
+}
+
+.alt:before {
+    top: 3px;
+    left: -16px;
+    content: url('../public/img/hero-section/link-pointer.svg');
+    @apply absolute border-none hidden md:block
+}
+
+@screen md {
+    .heading {
+        font-size: 3.5rem;
+        max-width: 650px;
+    }
+
+    .description {
+        max-width: 650px;
+    }
+
+    .cta {
+        max-width: 190px;
+        padding: 1rem 3rem;
+    }
+
+    .wrapper {
+        padding: 124px 20px 96px;
+    }
+}

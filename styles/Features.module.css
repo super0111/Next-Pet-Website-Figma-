@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 28px 0;
+    @apply bg-pink text-center
+}
+
+.features {
+    @apply container mx-auto flex flex-row justify-around md:justify-between lg:px-2
+}
+
+.feature {
+    @apply flex flex-col items-center md:flex-row
+}
+.icon {
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.description {
+    @apply text-white text-center text-xs md:text-sm mt-3 px-1 md:pl-3 md:mt-0
+}
+
+@screen md {
+    .wrapper {
+        padding: 14px 0;
+    }
+}

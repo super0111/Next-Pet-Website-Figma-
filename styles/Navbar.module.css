@@ -1,0 +1,121 @@
+.nav {
+    @apply container mx-auto flex flex-row flex-nowrap justify-between content-center p-4 relative
+}
+
+.logo {
+    max-width: 129px;
+    @apply flex content-center
+}
+
+.menuButton {
+    @apply cursor-pointer xl:hidden
+}
+
+.cartButton {
+    min-width: 24px;
+    min-height: 24px;
+    @apply flex content-center order-3 items-center
+}
+
+.mobileClose {
+    @apply text-right
+}
+
+.mobileClose button {
+    @apply p-5
+}
+
+.mobileLogo {
+    @apply text-center pt-12
+}
+
+.rewards,
+.call {
+    @apply font-bold text-center relative
+}
+
+.rewards:before,
+.call:before {
+    top: -2px;
+    left: -32px;
+    position: absolute;
+    content: url("../public/img/header/crown.svg");
+}
+
+.call:before {
+    content: url("../public/img/header/icon-call.svg");
+}
+
+.navWrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @apply z-20 bg-white fixed overflow-y-scroll xl:flex xl:justify-around xl:h-fit xl:w-full xl:static xl:order-2 xl:items-center xl:overflow-y-hidden
+}
+
+.navLinks {
+    @apply z-20 text-base w-full pt-3 bg-white flex flex-col xl:w-fit xl:flex-row xl:pt-0 xl:pl-24
+}
+
+.navLinks > li {
+    @apply text-center p-5 xl:p-4
+}
+
+.avatar {
+    width: 51px;
+    height: 51px;
+    @apply rounded-full flex items-center justify-center font-bold text-purple bg-light-purple
+}
+
+@screen lg {
+    .logo {
+        min-width: 216px;
+        max-width: 216px;
+    }
+}
+
+.megaLink {}
+
+.megaWrapper {
+    top: 64px;
+    left: 1rem;
+    right: 1rem;
+    max-width: 1248px;
+    @apply hidden xl:hover:block absolute bg-none w-full
+}
+
+.megaContainer {
+    border-radius: 6px;
+    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.08);
+    margin-top: 24px;
+    @apply bg-white flex
+}
+
+.megaLink:hover .megaWrapper {
+    display: block;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.features {
+    @apply flex flex-row flex-wrap text-center place-content-evenly place-items-center
+}
+
+.features > div {
+    padding: 1.5rem;
+}
+
+.icon {
+    margin-bottom: 10px;
+    width: 55px;
+    height: 55px;
+    @apply text-center
+}
+
+.iconDescription {
+    font-size: 1rem;
+    @apply font-bold text-lighter-black text-center md:pt-2
+}

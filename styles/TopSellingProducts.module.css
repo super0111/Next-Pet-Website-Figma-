@@ -1,0 +1,77 @@
+.wrapper {
+    @apply container mx-auto
+}
+
+.heading {
+    font-size: 1.25rem;
+    @apply text-purple text-center font-bold mb-3
+}
+
+.description {
+    font-size: 1rem;
+    @apply text-darker-gray text-center mb-2 px-3 max-w-2xl mx-auto
+}
+
+.products {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    @apply flex flex-nowrap mb-5 lg:justify-between xl:justify-center
+}
+
+.products::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 0.8px #e8e8e8;
+    min-width: 260px;
+    max-width: 260px;
+    @apply rounded flex flex-col text-center md:flex-row md:flex-wrap md:pt-8 md:px-6 md:mx-4 text-lighter-black
+}
+
+.image {
+    max-width: 120px;
+    max-height: 120px;
+    @apply mx-auto
+}
+
+.price {
+    @apply font-bold my-2 md:text-xl md:order-1 md:w-1/2 md:flex md:items-center md:justify-center
+}
+
+.title {
+    @apply font-bold my-2 md:w-full
+}
+
+.productDescription {
+    @apply my-2 md:w-full
+}
+
+.addToCart {
+    margin: 1rem 0;
+    padding: 0.85rem;
+    font-size: 0.85rem;
+    @apply text-purple bg-orange w-full rounded text-center font-bold md:order-2 md:w-1/2
+}
+
+@screen sm {
+    .heading {
+        font-size: 2.5rem;
+    }
+}
+@screen md {
+    .image {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .product {
+        min-width: 286px;
+        max-width: 286px;
+    }
+    .products {
+        @apply mb-16
+    }
+}

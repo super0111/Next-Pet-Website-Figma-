@@ -1,0 +1,21 @@
+.photos {
+    font-size: 0;
+    overflow-x: scroll;
+    @apply flex flex-row flex-nowrap mb-0 pb-0 pt-2 mx-auto justify-center
+}
+
+.photo {
+    min-width: 155px;
+    @apply relative block
+}
+
+.icon {
+    top: 8px;
+    right: 8px;
+    @apply absolute
+}
+
+.followUs {
+    padding: 25px;
+    @apply text-white text-center bg-pink mx-auto
+}

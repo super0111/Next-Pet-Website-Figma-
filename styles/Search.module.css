@@ -1,0 +1,23 @@
+.form {
+    @apply container p-4 mx-auto
+}
+
+.input {
+    padding: 12px 14px 12px 46px;
+    background: url("/img/header/icon-search.svg") 14px center no-repeat #fbf7ff;
+    background-size: 24px;
+    border: solid 1px #cfc2dc;
+    width: 100%;
+    font-size: 0.875rem;
+    @apply rounded focus:outline-none
+}
+
+.searchIcon {
+}
+
+@screen lg {
+    .form {
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+}
